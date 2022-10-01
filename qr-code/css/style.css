@@ -1,0 +1,47 @@
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+/*import normalize (makes browsers render all elements more consistently)*/
+@import url('./normalize.css');
+/*import variables for style*/
+@import url('./variables.css');
+/*style for body*/
+body {
+    font-family: var(--font);
+    background-color: var(--light_gray);
+}
+/*center alignment container*/
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*styles for card, image and text*/
+.card {
+    padding: 1.5rem;
+    max-width: 29rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.card__description {
+    text-align: center;
+}
+
+.card__header {
+    color: var(--dark_blue);
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.card__text {
+    color: var(--grayish_blue);
+    padding: 0 1.5rem 1.1rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
